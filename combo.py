@@ -7,12 +7,13 @@ class Combo:
         self.side = side
         self.total_price = 0    
 
-        if self.drink:
+        if self.drink in menu["Drinks"].keys() :
             self.total_price += menu["Drinks"][self.drink]
-        if self.entree:
+        if self.entree in menu["Entrees"].keys():
             self.total_price += menu["Entrees"][self.entree]
-        if self.side:
+        if self.side in menu["Sides"].keys():
             self.total_price += menu["Sides"][self.side]   
+  
 
     def get_total(self):
         return self.total_price
