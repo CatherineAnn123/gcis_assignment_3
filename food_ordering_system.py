@@ -24,7 +24,7 @@ class Combo:
         Parameters:
           drink (str) : drink input
           entree (str) : entree input
-          side (str) = side input
+          side (str) : side input
           
         """
         self.drink = drink
