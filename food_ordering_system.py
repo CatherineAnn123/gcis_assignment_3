@@ -95,6 +95,7 @@ class Order:
         print(f"\nTotal amount: {self.__total_amount} AED\n")
         print("-"*30)
 
+
 def main():
     """
     This function prints a welcome message followed by the menu.
