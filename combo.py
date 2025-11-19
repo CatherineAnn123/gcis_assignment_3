@@ -19,3 +19,11 @@ class Combo:
             self.total_price += menu["Sides"][self.side]   
         else:
             self.side = None
+
+    def display_combo(self):
+        print("\n\nCombo Details:")
+        print(f"Drink: {self.drink} | Entree: {self.entree} | Side: {self.side}")
+        print(f"Total combo price: {self.total_price}")
+
+    def get_total(self):
+        return self.total_price
