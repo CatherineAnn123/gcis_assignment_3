@@ -1,6 +1,6 @@
 # GCIS ASSIGNMENT 3
-# GROUP-6
 
+# GROUP-6:
 # Catherine Fernandez (413001100)
 # Ajsal Muhammed Kizhakkepattuthody
 
