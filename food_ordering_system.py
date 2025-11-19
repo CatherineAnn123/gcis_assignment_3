@@ -64,7 +64,12 @@ class Order:
     __slots__=["__order_id","__combos","__total_amount"]
 
     def __init__(self,order_id):
-        """Initialize Order with ID, empty combo list, zero total amount"""
+        """
+        Initialize Order with ID, empty combo list, zero total amount
+
+        Parameter:
+            order_id (int) : unique id for each order
+        """
         self.__order_id=order_id
         self.__combos=[]
         self.__total_amount=0
