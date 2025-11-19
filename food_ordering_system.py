@@ -14,6 +14,7 @@
 menu = {"Drinks":{"Cola": 5.0,"Juice": 7.0},"Entrees": {"Burger": 20.0,"Pizza": 25.0},
     "Sides": {"Fries": 8.0,"Salad": 10.0}}
 
+
 class Combo:
     __slots__ = ["drink", "entree", "side", "total_price"]
 
@@ -59,7 +60,8 @@ class Combo:
           get_total (float) : total price of the combo
         """
         return self.total_price
-    
+
+
 class Order:
     __slots__=["__order_id","__combos","__total_amount"]
 
@@ -94,6 +96,11 @@ class Order:
         print("-"*30)
 
 def main():
+    """
+    This function prints a welcome message followed by the menu.
+    Adds user input to let customers choose items from the menu, and creates the order accordingly.
+    After the order is created, it displays the receipt.
+    """
     
     print("\n--- Welcome to Eat and Drink ---")
     print("\nToday's Menu:")
@@ -109,7 +116,6 @@ def main():
     side = input("Enter side: ").title()
 
     order = Order(101)
-
     combo1 = Combo(drink, entree, side)
     order.add_combo(combo1)
     combo1.display_combo()
