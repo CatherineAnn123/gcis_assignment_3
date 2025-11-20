@@ -5,16 +5,15 @@
 # Ajsal Muhammed Kizhakkepattuthody (432004248)
 
 # MANIFESTO:
-# task 1,4 -
-# task 2 - Catherine Fernandez
+# task 2,4 - Catherine Fernandez
 # task 3 - Ajsal Muhammed Kizhakkepattuthody
 
 
-# menu
+# task-1
 menu = {"Drinks":{"Cola": 5.0,"Juice": 7.0},"Entrees": {"Burger": 20.0,"Pizza": 25.0},
     "Sides": {"Fries": 8.0,"Salad": 10.0}}
 
-
+# task-2
 class Combo:
     __slots__ = ["drink", "entree", "side", "total_price"]
 
@@ -61,7 +60,7 @@ class Combo:
         """
         return self.total_price
 
-
+# task-3
 class Order:
     __slots__=["__order_id","__combos","__total_amount"]
 
@@ -95,7 +94,7 @@ class Order:
         print(f"\nTotal amount: {self.__total_amount} AED\n")
         print("-"*30)
 
-
+# task-4
 def main():
     """
     This function prints a welcome message followed by the menu.
