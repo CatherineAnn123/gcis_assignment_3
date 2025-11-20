@@ -1,3 +1,5 @@
+menu={"Drinks":{"Cola": 5.0,"Juice": 7.0}," Entrees": {"Burger": 20.0,"Pizza": 25.0},
+    "Sides": {"Fries": 8.0,"Salad": 10.0}}
 class Combo:
     __slots__ = ["drink", "entree", "side", "total_price"]
 
@@ -27,3 +29,29 @@ class Combo:
 
     def get_total(self):
         return self.total_price
+
+
+class Order:
+    __slots__=["__order_id","__combo","__total_amount"]
+    def __init__(self,order_id):
+        """Initialize  Order with  ID,  empty combo list,  zero total amount."""
+        self.__order_id=order_id
+        self.__combo=[]
+        self.__total_amount=0
+    def add_combo(self,combo):
+        """Adds a Combo  and updates total using combos.get_total()."""
+        self.__combo.append(combo)
+        self.__total_amount+=combo.get_total()
+    def display_reciept(self):
+        """Print receipt showing all combos and the final total amount"""
+        print(f"Reciept for Order Id :{self.__order_id}")
+        print("-"*30)
+        print("")
+        print("-"*30)
+        print(f"Total amount:{self.__total_amount}AED")
+combo1 = Combo("Cola", "Burger", "Fries",)
+combo1.display_combo()
+order1 = Order(101)
+order1.add_combo(combo1)
+order1.display_reciept()
+

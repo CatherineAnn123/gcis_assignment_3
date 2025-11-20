@@ -2,7 +2,7 @@
 
 # GROUP-6:
 # Catherine Fernandez (413001100)
-# Ajsal Muhammed Kizhakkepattuthody
+# Ajsal Muhammed Kizhakkepattuthody (432004248)
 
 # MANIFESTO:
 # task 1,4 -

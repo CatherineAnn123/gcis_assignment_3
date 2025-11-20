@@ -55,6 +55,24 @@ class Order:
             count += 1 
         print("-"*30)
         print(f"Total amount:{self.get_total()}AED")
+    def main():
+        print("\n--- Welcome to Eat and Drink ---")
+        print("\nToday's Menu:")
+        for i in menu:
+          for item, price in menu[i].items():
+               print(f"{item} - {price} AED")
+        print("\n\nCreate your combo:\n")
+        drink = input("Enter drink: ").title()
+        entree = input("Enter entree: ").title()
+        side = input("Enter side: ").title()
+        order = Order(101)
+        combo1 = combo(drink, entree, side)
+        order.add_combo(combo1)
+        combo1.display_combo()
+        print("\n\nOrder successfully created!\n")
+        order.display_reciept()   
+    main()
+
    
 
 combo1 = combo("Cola", "Burger", "Fries")
@@ -64,6 +82,7 @@ combo2= combo("Juice","Pizza","Salad")
 order1.add_combo(combo1)
 order1.add_combo(combo2)
 order1.display_receipt()
+
 
 
 
