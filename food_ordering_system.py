@@ -6,7 +6,7 @@
 
 # MANIFESTO:
 # task 2,4 - Catherine Fernandez
-# task 3 - Ajsal Muhammed Kizhakkepattuthody
+# task 1,3 - Ajsal Muhammed Kizhakkepattuthody
 
 
 # task-1
